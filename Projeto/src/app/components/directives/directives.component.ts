@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class DirectivesComponent implements OnInit {
   size = 40
   font = 'arial'
-
   classes = ['green-title', 'small-title']
+
+  show: string = 'mostrar nao'
 
   constructor() { }
 

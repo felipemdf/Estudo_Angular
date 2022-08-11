@@ -1,2 +1,7 @@
 <h2 [ngStyle]="{'font-size': size + 'px', 'font-family': font}">Testando diretiva de estilo</h2>
 <h2 [ngClass]="classes">Testando diretiva de classe</h2>
+<h2 *ngIf="show === 'mostrar'; else notFound">Testando diretiva de condicional</h2>
+
+<ng-template #notFound> 
+    <h2>Not found</h2>
+</ng-template>
