@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Projeto';
+  myNumber: number = 0;
+
+  onChangeNumber (): void {
+    this.myNumber = Math.floor(Math.random() * 10);
+  }
 }

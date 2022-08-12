@@ -2,4 +2,8 @@
 <app-first-component></app-first-component>
 <app-directives></app-directives>
 <app-first-component></app-first-component>
-<app-eventos></app-eventos>
+
+<hr>
+
+<h1>O numero é: {{myNumber}}</h1>
+<app-eventos (changeNumber)="onChangeNumber()"></app-eventos>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-eventos',
@@ -9,6 +9,9 @@ export class EventosComponent implements OnInit {
 
   show: boolean = true;
 
+  @Output() 
+  changeNumber: EventEmitter<any> = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {
@@ -16,5 +19,9 @@ export class EventosComponent implements OnInit {
 
   showMessage(): void {
     this.show = !this.show;
+  }
+
+  handleClick():void {
+    this.changeNumber.emit();
   }
 }
