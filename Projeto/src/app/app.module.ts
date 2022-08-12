@@ -5,6 +5,7 @@ import { FirstComponentComponent } from './components/first-component/first-comp
 import { DirectivesComponent } from './components/directives/directives.component';
 import { EventosComponent } from './components/eventos/eventos.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
+import { PipesComponent } from './components/pipes/pipes.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
     DirectivesComponent,
     EventosComponent,
     ListRenderComponent,
+    PipesComponent,
   ],
   imports: [
     BrowserModule
