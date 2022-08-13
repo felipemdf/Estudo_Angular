@@ -9,6 +9,7 @@ import { EventosComponent } from './components/eventos/eventos.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayBindComponent } from './components/two-way-bind/two-way-bind.component';
+import { AppRoutingModule } from './app.routing.module';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { TwoWayBindComponent } from './components/two-way-bind/two-way-bind.comp
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

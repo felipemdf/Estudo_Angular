@@ -1,12 +1,7 @@
-<h1>Hello World!</h1>
-<app-first-component></app-first-component>
-<app-directives></app-directives>
-<app-first-component></app-first-component>
-
-<hr>
-
-<h1>O numero é: {{myNumber}}</h1>
-<app-eventos (changeNumber)="onChangeNumber()"></app-eventos>
-<app-list-render></app-list-render>
-<app-pipes></app-pipes>
-<app-two-way-bind></app-two-way-bind>
+<p>Header</p>
+<nav>
+    <a routerLink="/list">Lista</a>
+    <a routerLink="/">Inicio</a>
+</nav>
+<router-outlet></router-outlet>
+<p>Footer</p>
