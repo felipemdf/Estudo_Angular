@@ -11,6 +11,7 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayBindComponent } from './components/two-way-bind/two-way-bind.component';
 import { AppRoutingModule } from './app.routing.module';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { AppRoutingModule } from './app.routing.module';
     ListRenderComponent,
     PipesComponent,
     TwoWayBindComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
